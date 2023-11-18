@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanceamento Químico</title>
+</head>
+<body>
+    <h1>Balanceamento Químico</h1>
+    <form method="post">
+        <label for="equation">Equação Química:</label>
+        <input type="text" name="equation" required>
+        <button type="submit">Balancear</button>
+    </form>
+    {% if equation %}
+        <p>Equação Química: {{ equation }}</p>
+        <p>Solução: {{ solution }}</p>
+    {% endif %}
+</body>
+</html>
+
