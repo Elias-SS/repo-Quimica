@@ -41,10 +41,9 @@ body {
 /* Estilos para telas maiores */
 @media only screen and (min-width: 600px) {
     header {
-        background-image: url('jpg');
         /* Outros estilos para o header em telas maiores, se necessário */
         
-        background-color: black;
+    background-color: black;
     color: black;
     padding: 10px;
     display: flex;
@@ -134,12 +133,6 @@ a:hover {
     }
 }
 
-        
-        
-        
-        
-        
-        
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas igualmente espaçadas */
@@ -191,9 +184,7 @@ a:hover {
         height: 49px;
         font-size: 0.8rem;
         flex-grow: 0;
-        margin:3px;
-        
-        
+        margin:3px;        
     }
     
     .element:hover {
@@ -865,40 +856,6 @@ a:hover {
         background-color: #fdc6cd; 
     }
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
     .nova {
         display: flex;
         flex-direction: column;
@@ -940,8 +897,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-    }
-
 
     /* Metais Alcalinos */
 
@@ -978,8 +933,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     .element .Cesio{
         text-align: center;
         margin-left: 1px;
@@ -1010,8 +963,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     .element .Magnesio{
         text-align: center;
         margin-left: 1px;
@@ -1019,8 +970,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
 
     .element .Calcio{
         text-align: center;
@@ -1030,9 +979,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
-
     .element .Estroncio{
         text-align: center;
         margin-left: 1px;
@@ -1040,9 +986,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
-
 
     .element .Bario{
         text-align: center;
@@ -1052,10 +995,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
-
-
     .element .Radio{
         text-align: center;
         margin-left: 1px;
@@ -1064,11 +1003,7 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     /* Metais de Transição  */
-
-
 
     .element .Escandio{
         text-align: center;
@@ -1078,8 +1013,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     .element .Titaneo{
         text-align: center;
         margin-left: 1px;
@@ -1087,8 +1020,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
 
     .element .Vanadio{
         text-align: center;
@@ -1098,9 +1029,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
-
     .element .Cromo{
         text-align: center;
         margin-left: 1px;
@@ -1108,9 +1036,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
-
 
     .element .Manganes{
         text-align: center;
@@ -1120,10 +1045,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
-
-
     .element .Ferro{
         text-align: center;
         margin-left: 1px;
@@ -1131,8 +1052,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
 
     .element .Cobalto{
         text-align: center;
@@ -1142,8 +1061,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     .element .Niquel{
         text-align: center;
         margin-left: 1px;
@@ -1151,8 +1068,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
 
     .element .Cobre{
         text-align: center;
@@ -1162,8 +1077,6 @@ a:hover {
         font-weight: bold;
     }
 
-
-
     .element .Zinco{
         text-align: center;
         margin-left: 1px;
@@ -1171,8 +1084,6 @@ a:hover {
         margin-bottom:-1px;
         font-weight: bold;
     }
-
-
 
     .element .Itrio{
         text-align: center;
@@ -1209,8 +1120,6 @@ a:hover {
     font-weight: bold;
     }
 
-
-
     .element .Tecnecio{
         text-align: center;
         margin-left: 1px;
@@ -1229,8 +1138,6 @@ a:hover {
 
     }
 
-
-
     .element .Rodio{
         text-align: center;
         margin-left: 1px;
@@ -1240,8 +1147,6 @@ a:hover {
 
     }
 
-
-
     .element .Chumbo{
         text-align: center;
         margin-left: 1px;
@@ -1250,8 +1155,6 @@ a:hover {
         font-weight: bold;
 
     }
-
-
 
     .element .Prata{
         text-align: center;
@@ -1803,15 +1706,6 @@ a:hover {
 	  z-index: 1;
 	  height: 41vh;
 	}
-	   
-	 
-    
-
-     }
-
-   
-    
-
         .title_legenda {
             padding: 1px;
             text-align: center;
@@ -1940,7 +1834,6 @@ a:hover {
   margin-left: 3%;
   background: linear-gradient(9deg, rgba(128, 0, 128, 0.79), rgb(255,255,255));
 }
-	}
 	
 	iframe {
     border: none; /* Remove a borda padrão do iframe */
