@@ -10,8 +10,9 @@ def validar_equacao(equacao):
     return True  # Retorna True se a equação for válida, False caso contrário
 
 @app.route('/')
+@app.route('/index.html')
 def tabela_periodica():
-    return render_template('index.html')
+    return render_template('/index.html')
 
 @app.route('/Balanceamento', methods=['GET', 'POST'])
 def balanceamento():
