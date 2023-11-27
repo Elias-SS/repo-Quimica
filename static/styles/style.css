@@ -1,5 +1,7 @@
 body {
     font-size: 16px;
+    background-color: #000;
+    background-image: url(../imgs/folha.jpg);
 }
 
 @media screen and (max-width: 1000px) {
@@ -59,7 +61,7 @@ body {
 /* Estilos para telas menores ou iguais a 600px */
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url('jpg');
+        
         /* Outros estilos para o header em telas menores, se necessário */
         background-color: black;
     color: black;
@@ -141,12 +143,52 @@ a:hover {
 
         .box {
             margin-top:20px;
-            margin-left:18%;
-            margin-right:20px;
+            margin-left:10%;
+            margin-right:40px;
             padding: 20px;
-            border: 1px solid #000;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12); /* Tom de cinza escuro com opacidade de 0.8 para simular vidro transparente */
+            color: white; /* Cor do texto dentro da caixa */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra com opacidade para destacar a caixa */
+            backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque à borda */
+            text-align: justify;
+        }
+
+        .box-footer{
+            margin-top: 20px;
+            margin-left: 1%;
+            margin-right: 1%;
+            padding: 0px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12);
+            color: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+
         }
         
+      
+
+        .iframe {
+            margin-top:20px;
+            margin-left:18%;
+            margin-right:20px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px; /* Ajuste conforme necessário */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(50, 50, 50, 0.12); /* Tom de cinza escuro com opacidade de 0.12 para simular vidro transparente */
+            color: white; /* Cor do texto dentro da caixa */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra com opacidade para destacar a caixa */
+            backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque à borda */
+        }
+    
+        .iframe iframe {
+            width: 100%; /* Ou a porcentagem desejada */
+            height: 380px; /* Ou ajuste conforme necessário */
+            border: none;
+        }
         
         #section {
         
@@ -1841,3 +1883,18 @@ a:hover {
     height: 325px; /* Defina a altura desejada */
 }
 
+    .content_Balance{
+        
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 40px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: rgba(50, 50, 50, 0.12);
+        color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        text-align: justify;
+}
+
+    }
