@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='../static/imgs/img.jpg') }}">
     <title>Balanceamento Químico</title>
 </head>
 <body>
@@ -20,16 +21,18 @@
         </nav>
         
     </header>
-    <h1>Balanceamento Químico</h1>
-    <form method="post">
-        <label for="equation">Equação Química:</label>
-        <input type="text" name="equation" required>
-        <button type="submit">Balancear</button>
-    </form>
-    {% if equation %}
-        <p>Equação Química: {{ equation }}</p>
-        <p>Solução: {{ solution }}</p>
-    {% endif %}
+    <div class="content_Balance">
+        <h1>Balanceamento Químico</h1>
+        <form method="post">
+            <label for="equation">Equação Química:</label>
+            <input type="text" name="equation" required>
+            <button type="submit">Balancear</button>
+        </form>
+        {% if equation %}
+            <p>Equação Química: {{ equation }}</p>
+            <p>Solução: {{ solution }}</p>
+        {% endif %}
+    </div>
 </body>
 </html>
 
