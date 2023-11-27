@@ -30,9 +30,9 @@ def balanceamento():
             elementMatrix = []
 
             # Divida a equação em reagentes e produtos apenas se ela contiver o sinal de igualdade
-            if "=" in equation:
-                reagentes = equation.split("=")[0].replace(' ', '').split("+")
-                produtos = equation.split("=")[1].replace(' ', '').split("+")
+            if "->" in equation:
+                reagentes = equation.split("->")[0].replace(' ', '').split("+")
+                produtos = equation.split("->")[1].replace(' ', '').split("+")
 
                 def addToMatrix(elemento, índice, contagem, lado):
                     nonlocal elementMatrix  # Adicione essa linha para referenciar a variável global
@@ -78,7 +78,7 @@ def balanceamento():
 
                 solution = saida
             else:
-                raise ValueError("A equação não contém o sinal de igualdade '='.")
+                raise ValueError("A equação não contém o sinal de implicabilidade '->'.")
 
         except ValueError as ve:
             solution = f"Erro ao validar a equação: {str(ve)}"
