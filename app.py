@@ -10,8 +10,14 @@ def validar_equacao(equacao):
     return True  # Retorna True se a equação for válida, False caso contrário
 
 @app.route('/')
+<<<<<<< HEAD
 def tabela_periodica():
     return render_template('index.html')
+=======
+@app.route('/index.html')
+def tabela_periodica():
+    return render_template('/index.html')
+>>>>>>> prototipo
 
 @app.route('/Balanceamento', methods=['GET', 'POST'])
 def balanceamento():
@@ -29,9 +35,15 @@ def balanceamento():
             elementMatrix = []
 
             # Divida a equação em reagentes e produtos apenas se ela contiver o sinal de igualdade
+<<<<<<< HEAD
             if "=" in equation:
                 reagentes = equation.split("=")[0].replace(' ', '').split("+")
                 produtos = equation.split("=")[1].replace(' ', '').split("+")
+=======
+            if "->" in equation:
+                reagentes = equation.split("->")[0].replace(' ', '').split("+")
+                produtos = equation.split("->")[1].replace(' ', '').split("+")
+>>>>>>> prototipo
 
                 def addToMatrix(elemento, índice, contagem, lado):
                     nonlocal elementMatrix  # Adicione essa linha para referenciar a variável global
@@ -77,7 +89,11 @@ def balanceamento():
 
                 solution = saida
             else:
+<<<<<<< HEAD
                 raise ValueError("A equação não contém o sinal de igualdade '='.")
+=======
+                raise ValueError("A equação não contém o sinal de implicabilidade '->'.")
+>>>>>>> prototipo
 
         except ValueError as ve:
             solution = f"Erro ao validar a equação: {str(ve)}"
